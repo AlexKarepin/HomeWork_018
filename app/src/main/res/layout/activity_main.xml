@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViev"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#59CEDD"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/hello_world"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViev"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:background="#D4E344"
+        android:paddingHorizontal="120dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonEng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/eng"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonRus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rus"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/linerForSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/radioGroup"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFEB3B"
+            android:gravity="center"
+            android:text="@string/choose_theme"
+            android:textAlignment="viewEnd"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFEB3B"
+            android:entries="@array/styleTheme"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/linerForSpinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="@string/button"
+        android:textSize="24sp" />
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">HomeWork_018</string>
+    <string name="hello_world">Hello World</string>
+    <string name="button">Apply</string>
+    <string name="choose_theme">Choose a margin:</string>
+    <string name="eng">English</string>
+    <string name="rus">Russian</string>
+
+    <string-array name="styleTheme">
+        <item>def</item>
+        <item>1dp</item>
+        <item>18dp</item>
+        <item>15dp</item>
+    </string-array>
+</resources>
