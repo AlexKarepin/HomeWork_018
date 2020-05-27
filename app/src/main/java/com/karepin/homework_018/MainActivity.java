@@ -57,13 +57,13 @@ public class MainActivity extends AppCompatActivity {
                         Utils.changeToTheme(MainActivity.this, Utils.THEME_DEFAULT);
                         break;
                     case 1:
-                        Utils.changeToTheme(MainActivity.this, Utils.THEME_MARGIN_1);
+                        Utils.changeToTheme(MainActivity.this, Utils.THEME_MARGIN_ONE);
                         break;
                     case 2:
-                        Utils.changeToTheme(MainActivity.this, Utils.THEME_MARGIN_2);
+                        Utils.changeToTheme(MainActivity.this, Utils.THEME_MARGIN_TWO);
                         break;
                     case 3:
-                        Utils.changeToTheme(MainActivity.this, Utils.THEME_MARGIN_3);
+                        Utils.changeToTheme(MainActivity.this, Utils.THEME_MARGIN_THREE);
                         break;
                 }
             }

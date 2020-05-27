@@ -9,7 +9,7 @@
     <string-array name="styleTheme">
         <item>def</item>
         <item>1dp</item>
-        <item>18dp</item>
-        <item>15dp</item>
+        <item>3dp</item>
+        <item>5dp</item>
     </string-array>
 </resources>
