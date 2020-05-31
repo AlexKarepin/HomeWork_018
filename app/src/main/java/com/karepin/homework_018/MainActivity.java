@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         spinner = findViewById(R.id.spinner);
         button = findViewById(R.id.button);
         initSpinnerCountries();
-        onClick();
+        onClickMy();
     }
 
     private void initSpinnerCountries() {
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         spinner.setAdapter(adapterCountries);
     }
 
-    private void onClick() {
+    private void onClickMy() {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -66,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
                         Utils.changeToTheme(MainActivity.this, Utils.THEME_MARGIN_THREE);
                         break;
                 }
+                recreate();
             }
         });
 
@@ -76,6 +77,5 @@ public class MainActivity extends AppCompatActivity {
         Configuration config = new Configuration();
         config.setLocale(locale);
         getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
-        recreate();
     }
 }
